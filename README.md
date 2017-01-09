@@ -1,4 +1,4 @@
-This repo reproduces a bug in Jest.
+This repo reproduces a bug in Jest. The tests pass in Mocha but fail in Jest.
 
 ```
 $ npm install

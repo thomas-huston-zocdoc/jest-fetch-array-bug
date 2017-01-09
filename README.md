@@ -33,7 +33,5 @@ In Mocha, this check succeeds and `node-fetch` parses the cookies header just fi
 
 In Jest, this check fails saying the `set-cookie` header is *not* an `instanceof Array`.
 
-`Array.isArray` succeeds in both Mocha and Jest, so one possible solution here is to update `node-fetch` to use that instead of `instanceof Array`.
-
-But the bigger issue is that it appears Jest is in some way interfering with the actual instances of node builtin types like `Array` in ways that cause unexpected bugs.
+`Array.isArray` succeeds in both Mocha and Jest, so I've [submitted a PR](https://github.com/bitinn/node-fetch/pull/220) to update `node-fetch` to do so.
 

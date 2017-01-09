@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "name": "jest-fetch-array-bug",
+  "scripts": {
+    "start": "node server.js",
+    "test:jest": "jest test.js",
+    "test:mocha": "mocha test.js"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "express": "^4.14.0",
+    "jest": "^18.1.0",
+    "mocha": "^3.2.0",
+    "node-fetch": "^1.6.3"
+  }
+}
